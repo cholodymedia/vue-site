@@ -54,6 +54,7 @@
       <div class="arrow-box">
         <font-awesome-icon
           :icon="['fas','angle-double-down']"
+          class="arrow"
         />
       </div>
     </div>
@@ -74,13 +75,19 @@ export default {
     handleClick() {
       if (this.link) {
         this.link = false;
-        this.hide = false;
         this.show = true;
+        setTimeout(this.hideShow, 500);
       } else {
         this.link = true;
-        this.show = false;
         this.hide = true;
+        setTimeout(this.hideHide, 500);
       }
+    },
+    hideShow() {
+      this.show = false;
+    },
+    hideHide() {
+      this.hide = false;
     },
   },
 };
@@ -90,6 +97,7 @@ export default {
   .startWrapper {
     width: 100vw;
     height: 100vh;
+    min-height: 500px;
     background: #212121;
     display: flex;
     flex-direction: column;
@@ -140,6 +148,16 @@ export default {
             transform: translate(10vw);
           }
         }
+        @media (min-width: 768px) {
+          font-size: 2rem;
+        }
+        @media (min-width: 1200px) {
+          width: 8vw;
+          font-size: 1.8rem;
+          :last-of-type {
+            margin-right: 0vw;
+          }
+        }
       }
       .socialButton {
         width: 22vw;
@@ -149,15 +167,32 @@ export default {
         align-items: center;
         cursor: pointer;
         .circle {
-          width: 14vw;
-          height: 14vw;
-          border-radius: 30px;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
           background-color: #424242;
           display: flex;
           justify-content: center;
           align-items: center;
           font-size: 1.3rem;
           color: #FAFAFA;
+        }
+        @media (min-width: 768px) {
+          .circle {
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+            font-size: 1.8rem;
+          }
+        }
+        @media (min-width: 1200px) {
+          width: 10vw;
+          .circle {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -191,6 +226,16 @@ export default {
           color: rgb(231, 153, 7);
         }
       }
+      @media (min-width: 768px) {
+        .title {
+          font-size: 3.5rem;
+        }
+        .subtitle {
+          font-size: 2rem;
+          margin-top: 20px;
+          letter-spacing: 2px;
+        }
+      }
     }
 
     .buttom {
@@ -212,7 +257,9 @@ export default {
         align-items: center;
         font-size: 2rem;
         color: #9E9E9E;
-        animation: updown 1.2s ease-out infinite;
+        .arrow {
+          animation: updown 1.2s ease-out infinite;
+        }
       }
       @keyframes updown {
         0% {
@@ -223,6 +270,23 @@ export default {
         }
         100% {
           transform: translateY(-10px);
+        }
+      }
+      @media (min-width: 768px) {
+        .title {
+          font-size: 2rem;
+        }
+        .arrow-box {
+          font-size: 3rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        flex: 2.5;
+        .title {
+          font-size: 1.8rem;
+        }
+        .arrow-box {
+          font-size: 1.8rem;
         }
       }
     }

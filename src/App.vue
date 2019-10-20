@@ -24,9 +24,10 @@ export default {
 }
 #app {
   font-family: 'Montserrat';
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 </style>

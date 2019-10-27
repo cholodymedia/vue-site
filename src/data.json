@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "img": "baza_su",
+      "color": "#3BD9C9",
+      "title": "Financial Database",
+      "github_state": "no-active",
+      "github_link": "",
+      "website_state": "no-active",
+      "website_link": "",
+      "description": "A financial database of the Student Council. Made as a school project"
+    },
+    {
+      "id": 2,
+      "img": "poten",
+      "color": "#FAFF00",
+      "title": "Potencjałometr",
+      "github_state": "no-active",
+      "github_link": "",
+      "website_state": "active",
+      "website_link": "http://p.staff.edu.pl/",
+      "description": "Interactive test of professional predispositions. Made as a school project"
+    },
+    {
+      "id": 3,
+      "img": "sudoku",
+      "color": "#A1FBF3",
+      "title": "SudoQ",
+      "github_state": "active",
+      "github_link": "https://github.com/cholodymedia/sudoku",
+      "website_state": "active",
+      "website_link": "https://cholodymedia.github.io/sudoku/",
+      "description": "A game of Sudoku written in JavaScript with the use of backtracking algorithms"
+    },
+    {
+      "id": 4,
+      "img": "tictactoe",
+      "color": "#D1685A",
+      "title": "Tic Tac Toe",
+      "github_state": "active",
+      "github_link": "https://github.com/cholodymedia/tictactoe/tree/gh-pages",
+      "website_state": "active",
+      "website_link": "https://cholodymedia.github.io/tictactoe/",
+      "description": "This JavaScript-based Tic Tac Toe game uses a special algorithm that tries to predict your moves"
+    },
+    {
+      "id": 5,
+      "img": "bestw",
+      "color": "#E4D48E",
+      "title": "Best Weather",
+      "github_state": "active",
+      "github_link": "https://github.com/cholodymedia/bestweather",
+      "website_state": "active",
+      "website_link": "https://cholodymedia.github.io/bestweather/",
+      "description": "A weather app made as API implementation practice"
+    },
+    {
+      "id": 6,
+      "img": "debugjs",
+      "color": "#335B66",
+      "title": "Debug JS",
+      "github_state": "active",
+      "github_link": "https://github.com/cholodymedia/debug",
+      "website_state": "active",
+      "website_link": "https://cholodymedia.github.io/debug/",
+      "description": "A JS script that shows borders of website elements made to help build websites from scratch"
+    }
+  ]
+}

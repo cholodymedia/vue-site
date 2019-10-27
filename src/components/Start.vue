@@ -101,7 +101,9 @@ export default {
     background: #212121;
     display: flex;
     flex-direction: column;
-
+    @media (max-width: 700px) {
+      height: 90vh;
+    }
     .nav {
       flex: 1.8;
       display: flex;

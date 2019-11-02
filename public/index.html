@@ -5,8 +5,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="Projekty Stron Internetowych" />
+  <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Vue,cholodymedia,Chołody" />
+  <meta name="author" content="Marcin Chołody" />
   <link rel="icon" href="<%= BASE_URL %>favicon.png">
   <script src="https://cholodymedia.github.io/debug/debug.js" defer></script>
+  <script>
+    function orientation() {
+      if (window.screen.orientation.type == "landscape-primary") {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=0.45');
+      } else {
+        document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=1.0');
+      }
+    }
+    orientation();
+    window.addEventListener("orientationchange", orientation, false);
+  </script>
   <title>cholodymedia</title>
 </head>
 

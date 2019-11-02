@@ -2,18 +2,21 @@
   <div id="app">
     <Start/>
     <Projects/>
+    <About/>
   </div>
 </template>
 
 <script>
 import Start from '@/components/Start.vue';
 import Projects from '@/components/Projects.vue';
+import About from '@/components/About.vue';
 
 export default {
   name: 'app',
   components: {
     Start,
     Projects,
+    About,
   },
 };
 </script>
@@ -24,6 +27,7 @@ export default {
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 #app {
   font-family: 'Montserrat';

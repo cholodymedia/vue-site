@@ -20,7 +20,7 @@
             v-else
             :icon="['fab','github']"
             class="no-active"
-            title="no source"
+            title="private project"
             />
           </div>
           <div class="social-box">
@@ -35,7 +35,7 @@
             v-else
             :icon="['fas','globe-americas']"
             class="no-active"
-            title="no source"
+            title="private website"
             />
           </div>
         </div>

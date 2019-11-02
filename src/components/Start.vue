@@ -7,6 +7,7 @@
             :icon="['fab','github']"
             v-if="link === false || show === true || hide === true"
             :class="{'animation-show' : show, 'animation-hide' : hide}"
+            title="github"
           />
         </a>
       </div>
@@ -16,6 +17,7 @@
             :icon="['far','envelope']"
             v-if="link === false || show === true || hide === true"
             :class="{'animation-show' : show, 'animation-hide' : hide}"
+            title="email"
           />
         </a>
       </div>
@@ -25,6 +27,7 @@
             :icon="['fab','instagram']"
             v-if="link === false || show === true || hide === true"
             :class="{'animation-show' : show, 'animation-hide' : hide}"
+            title="instagram"
           />
         </a>
       </div>
@@ -55,6 +58,7 @@
         <font-awesome-icon
           :icon="['fas','angle-double-down']"
           class="arrow"
+          @click="scroll"
         />
       </div>
     </div>
@@ -88,6 +92,9 @@ export default {
     },
     hideHide() {
       this.hide = false;
+    },
+    scroll() {
+      document.getElementsByClassName('projects-wrapper')[0].scrollIntoView();
     },
   },
 };
@@ -261,6 +268,11 @@ export default {
         color: #9E9E9E;
         .arrow {
           animation: updown 1.2s ease-out infinite;
+          padding: 10px;
+        }
+        :hover {
+          cursor: pointer;
+          color: rgb(216, 216, 216);
         }
       }
       @keyframes updown {

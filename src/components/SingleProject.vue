@@ -134,6 +134,7 @@ export default {
         padding-left: 5vw;
         padding-right: 5vw;
         text-align: justify;
+        line-height: 2rem;
         @media (min-width: 1200px) {
           font-size: 1.1rem;
           padding-left: 3vw;

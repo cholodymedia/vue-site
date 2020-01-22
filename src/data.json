@@ -57,7 +57,7 @@
     },
     {
       "id": 6,
-      "img": "debugjs",
+      "img": "debugjs_light",
       "color": "#335B66",
       "title": "Debug JS",
       "github_state": "active",

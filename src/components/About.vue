@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Me from '@/assets/me.png';
+import Me from '@/assets/me_light.png';
 
 export default {
   name: 'About',

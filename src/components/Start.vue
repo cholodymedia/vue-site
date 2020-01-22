@@ -31,7 +31,7 @@
           />
         </a>
       </div>
-      <div class="socialButton">
+      <div class="socialButton" data-aos="fade-up-left">
         <div class="circle" @click="handleClick">
           <font-awesome-icon
             :icon="['fas','link']"
@@ -45,14 +45,14 @@
       </div>
     </nav>
     <div class="main">
-      <p class="title">cholodymedia</p>
-      <p class="subtitle">
-        <span class="lang">#JS</span>
-        <span class="lang">#PHP</span>
+      <p class="title" data-aos="zoom-in" data-aos-duration="1000">cholodymedia</p>
+      <p class="subtitle" data-aos="zoom-in-up">
+        <span class="lang">#Vue</span>
         <span class="lang">#MySQL</span>
+        <span class="lang">#PHP</span>
       </p>
     </div>
-    <div class="buttom">
+    <div class="buttom" data-aos="fade-up">
       <div class="title">Check my projects</div>
       <div class="arrow-box">
         <font-awesome-icon
@@ -226,13 +226,13 @@ export default {
           margin-right: 4px;
         }
         .lang:first-of-type {
-          color: rgb(206, 206, 4);
-        }
-        .lang:nth-of-type(2) {
-          color: rgb(196, 1, 186);
+          color: #41b85f;
         }
         .lang:nth-of-type(3) {
-          color: rgb(231, 153, 7);
+          color: rgb(196, 1, 186);
+        }
+        .lang:nth-of-type(2) {
+          color: rgb(231, 209, 7);
         }
       }
       @media (min-width: 768px) {

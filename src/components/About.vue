@@ -2,12 +2,12 @@
   <div class="aboutWrapper">
     <div class="content">
       <div class="image-box">
-        <img :src="image" alt="Portrait">
+        <img :src="image" alt="Portrait" data-aos="flip-left" data-aos-duration="500">
       </div>
       <div class="text-box">
-        <p class="about">About</p>
-        <hr>
-        <p class="describ">
+        <p class="about" data-aos="fade-down">About</p>
+        <hr data-aos="fade-down">
+        <p class="describ" data-aos="fade-left">
           <!-- eslint-disable -->
           My name is Marcin. I'm a senior computer science student in the best IT school in Poland (or so they say). Programming is my passion and the job of my dreams.
           <!-- eslint-enable -->

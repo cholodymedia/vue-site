@@ -9,8 +9,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import App from './App.vue';
 
+AOS.init();
 library.add(faGithub, faEnvelope, faInstagram, faLink, faTimes, faAngleDoubleDown, faGlobeAmericas);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

@@ -12,6 +12,7 @@
       :website_state="item.website_state"
       :website_link="item.website_link"
       class="single-project"
+      data-aos="zoom-in-up"
       />
     </div>
 </template>
